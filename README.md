@@ -1,5 +1,5 @@
 # Odds and Events
-
+ 
 ![Example screenshot of numbers partially sorted from a bank into the appropriate odds or evens bucket](example.png)
 
 The goal of this workshop is to create an app that allows a user to input a number into a number bank. The user can then sort the numbers in the bank into one of two categories: odd or even.
