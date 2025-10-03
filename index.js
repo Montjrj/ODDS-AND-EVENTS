@@ -1,4 +1,3 @@
-
 const bank = [];
 const odds = [];
 const evens = [];
@@ -33,13 +32,13 @@ function sortAll() {
   render();
 }
 
-t all numbers */
+
 function NumberForm() {
   const $form = document.createElement("form");
   $form.innerHTML = `
     <label>
       Add a number to the bank
-      <input name="number" type="number" />
+      <input name="number" type="number"/>
     </label>
     <button type="submit" data-action="add"> Add number</button>
     <button type="submit" data-action="sortOne"> Sort 1</button>
@@ -108,12 +107,11 @@ function render() {
       <NumberBank id="bank"></NumberBank>
       <NumberBank id="odds"></NumberBank>
       <NumberBank id="evens"></NumberBank>
+      
     `;
   $app.querySelector("NumberForm").replaceWith(NumberForm());
   $app.querySelector("NumberBank#bank").replaceWith(NumberBank("Bank", bank));
   $app.querySelector("NumberBank#odds").replaceWith(NumberBank("Odds", odds));
-  $app
-    .querySelector("NumberBank#evens")
-    .replaceWith(NumberBank("Evens", evens));
+  $app.querySelector("NumberBank#evens").replaceWith(NumberBank("Evens", evens));
 }
 render();
